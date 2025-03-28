@@ -1,4 +1,5 @@
 #include "Lesson.h"
+#include "PaidLesson.h"
 
 int main()
 {
@@ -7,5 +8,14 @@ int main()
 
 	a.showInfo();
 	b.showInfo();
+	cout << "==========================================\n";
+	PaidLesson c;
+	PaidLesson d("C#", "Loops", "while, for", 200.99);
+
+	c.showInfo();
+	d.showInfo();
+
+	cout << "==========================================\n";
+
 }
 
