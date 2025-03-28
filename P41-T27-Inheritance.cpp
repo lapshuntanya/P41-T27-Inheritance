@@ -1,7 +1,11 @@
-#include <iostream>
+#include "Lesson.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	Lesson a;
+	Lesson b("JS", "DOM-model", "Create a gallery");
+
+	a.showInfo();
+	b.showInfo();
 }
 
