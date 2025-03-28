@@ -25,33 +25,17 @@ Lesson::~Lesson(){
 #endif // DEDUG
 }
 
-void Lesson::setTheme(string theme)
-{
-}
+void Lesson::setTheme(string theme){ this->theme = theme; }
+void Lesson::setInfo(string info){ this->info = info; }
+void Lesson::setHome(string home){ this->home = home; }
 
-void Lesson::setInfo(string info)
-{
-}
+string Lesson::getTheme() const{    return theme;}
+string Lesson::getInfo() const{    return info;}
+string Lesson::getHome() const{    return home;}
 
-void Lesson::setHome(string home)
-{
-}
-
-string Lesson::getTheme() const
-{
-    return string();
-}
-
-string Lesson::getInfo() const
-{
-    return string();
-}
-
-string Lesson::getHome() const
-{
-    return string();
-}
-
-void Lesson::showInfo() const
-{
+void Lesson::showInfo() const{
+    cout << endl;
+    cout << "Theme: " << theme << endl;
+    cout << "Info:  " << info << endl;
+    cout << "HW:    " << home << endl;
 }
